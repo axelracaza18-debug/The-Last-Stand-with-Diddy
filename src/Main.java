@@ -1,13 +1,42 @@
 import java.util.Scanner;
 
 public class Main {
+    public static void showOptions(Scanner sc) {
+        int optionChoice;
 
+        do {
+            System.out.println("\n===== OPTIONS =====");
+            System.out.println("1. Show Controls");
+            System.out.println("2. Credits");
+            System.out.println("3. Back to Main Menu");
+            System.out.print("Choose: ");
+
+            optionChoice = sc.nextInt();
+            sc.nextLine();
+
+            switch (optionChoice) {
+                case 1:
+                    System.out.println("\n🎮 CONTROLS:");
+                    System.out.println("A = Attack");
+                    System.out.println("H = Heal");
+                    System.out.println("Enter = Next action");
+                    break;
+                case 2:
+                    System.out.println("\n👤 Game by Axel & ChatGPT");
+                    break;
+                case 3:
+                    System.out.println("Returning to main menu...");
+                    break;
+                default:
+                    System.out.println("Invalid input!");
+            }
+        } while (optionChoice != 3);
+    }
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         Game game = new Game();
         int choice;
-
 
         do {
             System.out.println("\n===== OILY APOCALYPSE MENU =====");
@@ -16,16 +45,18 @@ public class Main {
             System.out.println("3. Quit");
             System.out.print("Choose an option: ");
 
-            choice = sc.nextInt();  // user input
+            choice = sc.nextInt();
+            sc.nextLine(); // clears newline buffer
 
             switch (choice) {
                 case 1:
                     System.out.println("Starting the game...");
+                    game.start();
+                    break;
+                    case 2:
+                    showOptions(sc);
+                    break;
 
-                    break;
-                case 2:
-                    System.out.println("Game settings coming soon...");
-                    break;
                 case 3:
                     System.out.println("Exiting the game. Stay slippery 💧");
                     break;
@@ -33,8 +64,8 @@ public class Main {
                     System.out.println("Invalid option. Try again!");
             }
 
-        } while (choice != 3); // loop until user chooses Quit
+        } while (choice != 3);
 
-
+        sc.close();
     }
 }

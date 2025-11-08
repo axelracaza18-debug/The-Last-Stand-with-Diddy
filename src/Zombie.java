@@ -1,14 +1,17 @@
 public class Zombie {
-    private int health;
-    private int attackPower;
+    protected int health;
+    protected int attackPower;
+    protected String type;
 
-    public Zombie(int health, int attackPower) {
+    public Zombie(int health, int attackPower, String type) {
         this.health = health;
         this.attackPower = attackPower;
+        this.type = type;
     }
 
     public void attack(Player p) {
         p.takeDamage(attackPower);
+        System.out.println(type + " attacks you for " + attackPower + " damage!");
     }
 
     public void takeDamage(int dmg) {
@@ -17,5 +20,9 @@ public class Zombie {
 
     public int getHealth() {
         return health;
+    }
+
+    public String getType() {
+        return type;
     }
 }
