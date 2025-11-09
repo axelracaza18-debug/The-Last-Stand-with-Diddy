@@ -1,3 +1,4 @@
+// ===== MAIN MENU =====
 import java.util.Scanner;
 
 public class Main {
@@ -18,11 +19,15 @@ public class Main {
                 case 1:
                     System.out.println("\n🎮 CONTROLS:");
                     System.out.println("A = Attack");
-                    System.out.println("H = Heal");
-                    System.out.println("Enter = Next action");
+                    System.out.println("W = Weakspot Strike");
+                    System.out.println("H = Heal (+15 HP)");
+                    System.out.println("M = Use Medkit (+30 HP)");
+                    System.out.println("R = Reload");
+                    System.out.println("I = Check Inventory");
                     break;
                 case 2:
                     System.out.println("\n👤 Game by Axel & ChatGPT");
+                    System.out.println("💀 The Last Stand: Oily Apocalypse 💀");
                     break;
                 case 3:
                     System.out.println("Returning to main menu...");
@@ -32,8 +37,8 @@ public class Main {
             }
         } while (optionChoice != 3);
     }
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Game game = new Game();
         int choice;
@@ -53,10 +58,9 @@ public class Main {
                     System.out.println("Starting the game...");
                     game.start();
                     break;
-                    case 2:
+                case 2:
                     showOptions(sc);
                     break;
-
                 case 3:
                     System.out.println("Exiting the game. Stay slippery 💧");
                     break;

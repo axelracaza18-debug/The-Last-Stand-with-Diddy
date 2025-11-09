@@ -1,3 +1,4 @@
+// ===== INVENTORY =====
 import java.util.HashMap;
 
 public class Inventory {
@@ -5,7 +6,7 @@ public class Inventory {
 
     public void addItem(String item) {
         items.put(item, items.getOrDefault(item, 0) + 1);
-        System.out.println("🧳 Added to inventory: " + item);
+        System.out.println("🎒 Added to inventory: " + item);
     }
 
     public boolean useItem(String item) {
