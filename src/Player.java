@@ -10,6 +10,40 @@ public class Player {
         this.health = health;
         this.weapon = startingWeapon;
     }
+    // new fields (add near the other fields)
+    private boolean stunned = false;
+    private int dotDamage = 0;     // damage applied each tick (Damage Over Time)
+    private int dotTurns = 0;      // how many ticks remain
+
+    // setter/getter for stunned
+    public void setStunned(boolean value) {
+        this.stunned = value;
+    }
+    public boolean isStunned() {
+        return this.stunned;
+    }
+
+    // apply a damage-over-time effect: dmg per turn for 'turns' turns
+    public void applyDamageOverTime(int dmgPerTurn, int turns) {
+        // If a stronger DoT is applied, overwrite. You can change logic to stack if wanted.
+        this.dotDamage = dmgPerTurn;
+        this.dotTurns = turns;
+        System.out.println("⚠️ You are afflicted: " + dmgPerTurn + " DOT for " + turns + " turns!");
+    }
+
+    // Called each round to process active status effects (DOTs, etc.)
+    public void processStatusEffects() {
+        // Process DOT
+        if (dotTurns > 0) {
+            takeDamage(dotDamage);
+            dotTurns--;
+            System.out.println("🩸 You suffer " + dotDamage + " DOT damage. (" + dotTurns + " turns left)");
+        }
+
+        // Stun remains until cleared by game logic or lasts one forced skip.
+        // We don't auto-clear stunned here; Game loop will clear after using it to skip one turn.
+    }
+
 
     public void attack(Zombie z) {
         if (ammo > 0) {
