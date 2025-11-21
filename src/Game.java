@@ -17,24 +17,30 @@ public class Game {
         while (player.getHealth() > 0 && wave <= maxWaves) {
             Zombie z;
 
-            // ====== Determine Enemy Type ======
-            if (wave == 6) {
-                System.out.println("\n💿 Wave 6 – Rapper Snake enters the stage!");
-                System.out.println("🎧 The bass drops... and your heartbeat matches it.");
-                z = new RapperSnake(); // our new boss
-            } else if (wave == 7) {
-                z = new GoldenCrooner();
-                System.out.println("\n🎤 WAVE 7 BOSS — THE GOLDEN CROONER APPEARS!");
-            }
-
-            else if (wave == maxWaves) {
+            if (wave == maxWaves) {
                 z = new BossZombie(wave);
                 System.out.println("\n⚠️ FINAL WAVE! A DIDDY BOSS APPROACHES! ⚠️");
+
+            } else if (wave == 8) {
+                System.out.println("\n🔥 Wave 8 – EDP Boss appears!");
+                System.out.println("\"Did you miss me?\"");
+                z = new EDPBoss();
+
+            } else if (wave == 7) {
+                System.out.println("\n🎤 Wave 7 – The Golden Crooner sings ominously…");
+                z = new GoldenCrooner();
+
+            } else if (wave == 6) {
+                System.out.println("\n💿 Wave 6 – Rapper Snake enters!");
+                z = new RapperSnake();
+
             } else if (Math.random() < 0.6) {
                 z = new Walker();
+
             } else {
                 z = new Runner();
             }
+
 
             System.out.println("\nWave " + wave + " - A " + z.getType() + " appears!");
 
