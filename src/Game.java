@@ -21,7 +21,16 @@ public class Game {
                 z = new BossZombie(wave);
                 System.out.println("\n⚠️ FINAL WAVE! A DIDDY BOSS APPROACHES! ⚠️");
 
-            } else if (wave == 8) {
+            } if (wave == 9) {
+                System.out.println("\n🎵 A soft intro plays... \"If I had one wish...\"");
+                System.out.println("🌈 Wave 9 — Ray J, the R&B Menace descends into the arena!");
+                System.out.println("🎧 (You feel the slow R&B vibe building...)");
+                z = new RayJBoss();
+            } else if (wave == 10) {
+                z = new BossZombie(wave); // Diddy final boss
+            }
+// ... other wave logic
+            else if (wave == 8) {
                 System.out.println("\n🔥 Wave 8 – EDP Boss appears!");
                 System.out.println("\"Did you miss me?\"");
                 z = new EDPBoss();

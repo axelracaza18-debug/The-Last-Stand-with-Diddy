@@ -4,6 +4,8 @@ public class Player {
     private int healAmount = 15;
     private Weapon weapon;
     private int ammo = 20;
+    private boolean dodgeReady = false;
+
     private Inventory inventory = new Inventory();
 
     public Player(int health, Weapon startingWeapon) {
@@ -114,4 +116,13 @@ public class Player {
             System.out.println("❌ No ammo packs left!");
         }
     }
+    public boolean isDodgeReady() {
+        return dodgeReady;
+    }
+
+    public void setDodgeReady(boolean ready) {
+        this.dodgeReady = ready;
+    }
+
 }
+
