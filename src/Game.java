@@ -17,20 +17,19 @@ public class Game {
         while (player.getHealth() > 0 && wave <= maxWaves) {
             Zombie z;
 
-            if (wave == maxWaves) {
-                z = new BossZombie(wave);
-                System.out.println("\n⚠️ FINAL WAVE! A DIDDY BOSS APPROACHES! ⚠️");
-
-            } if (wave == 9) {
-                System.out.println("\n🎵 A soft intro plays... \"If I had one wish...\"");
-                System.out.println("🌈 Wave 9 — Ray J, the R&B Menace descends into the arena!");
-                System.out.println("🎧 (You feel the slow R&B vibe building...)");
+            if (wave == 9) {
+                System.out.println("\n🎵 A soft R&B intro begins to play...");
+                System.out.println("🎶 \"If I had one wish... we would be best friends...\" 🎶");
+                System.out.println("🌈 The lights dim. Purple fog fills the arena.");
+                System.out.println("🔥 Wave 9 — Ray J, the R&B Menace, floats down from the sky!");
+                System.out.println("💫 His aura grows stronger as the chorus approaches...");
                 z = new RayJBoss();
+
             } else if (wave == 10) {
-                z = new BossZombie(wave); // Diddy final boss
-            }
-// ... other wave logic
-            else if (wave == 8) {
+                System.out.println("\n⚠️ FINAL WAVE! The Diddler emerges from the shadows! ⚠️");
+                z = new DiddlerBoss();
+
+            } else if (wave == 8) {
                 System.out.println("\n🔥 Wave 8 – EDP Boss appears!");
                 System.out.println("\"Did you miss me?\"");
                 z = new EDPBoss();
