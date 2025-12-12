@@ -56,6 +56,7 @@ public class Main {
             switch (choice) {
                 case 1:
                     System.out.println("Starting the game...");
+                    game.showIntro();
                     game.start();
                     break;
                 case 2:

@@ -6,16 +6,86 @@ public class Game {
     private Scanner sc = new Scanner(System.in);
     private int wave = 1;
     private final int maxWaves = 10;
+    public void showIntro() {
+        String intro1 =
+                "In the quiet town of new Jockey.\n" +
+                        "The morning news exploded with headlines:\n" +
+                        "Rapper 'P. Shiddy' arrested for human trafficking.\n" +
+                        "But the strangest part wasn't the crime... it was him.\n\n"+
+                        "On the news footage, shiddy twitched, mumbled, stared at the camera\n" +
+                        "like something was tearing him apart from the inside\n\n";
+
+
+
+
+        String intro2 =
+                "Watching from home, Zack D.S. Notts, a janitor at Greyfall Penitentiary, felt a chill.\n" +
+                        "Greyfall wasn't normal prison.. it held the worst monsters New Jockey ever produced\n" +
+                        "And tonight, Zack would meet another one\n\n";
+
+        String intro3 =
+                "During his night shift, Zack heard a violent banging echoing through the Cell block C.\n" +
+                        "He checked the source....\n"+
+                        "Cell 13. P. Shiddy\n\n"+
+                        "Except..he didn't look human anymore.\n\n"+
+                        "Shiddy was convulsing, slamming his head into the bars, growling like an animal\n\n"+
+                        "Before zack could react\n"+
+                        "Shiddy broke the cell open with inhuman strength\n"+
+                        "The alarms blared. Guards rushed in. But it was too late\n\n"+
+                        "Shiddy lunged. Biting, tearing, infecting\n"+
+                        "The bitten guards staggered.. then turned.\n"+
+                        "Their eyes went dead\n"+
+                        "Their bodies twitched\n"+
+                        "And they attacked everything that moved\n"+
+                        "Zack froze\n"+
+                        "Then instinct took over\n"+
+                        "He ran\n"+
+                        "He didn't fight\n"+
+                        "He didn't help\n"+
+                        "He just ran, through the corridors, out of the gate, all the way home\n"+
+                        "He collapsed in bed, panting\n"+
+                        "His last thought before he sleep was denial: 'Maybe it was just a nightmare'\n ";
+
+
+        String intro4 =
+                "Morning came. Zack watched the news.\n" +
+                        "New Jockey was on fire.\n" +
+                        "Cars was flipped\n"+
+                       "The infection was spreading all over the news\n"+
+                        "The chaos he saw in the prison became a real nightmare to him\n\n"+
+                         "Zack realized something that punch him straigh in the gut\n"+
+                        "He was the only witness to the start of this outbreak.\n"+
+                        "He could have stopped it\n\n"+
+                        "But he didn't\n"+
+                        "All he did was run\n"+
+                        "He stood up from the couch, heart pounding,he clenched his fist\n"+
+                        "'I should've stopped him'\n"+
+                        "'Now it's on me to finish this\n";
+
+
+
+        Displays.typewriter(intro1);
+        Displays.typewriter(intro2);
+        Displays.typewriter(intro3);
+        Displays.typewriter(intro4);
+
+        System.out.println("\n--- GAME STARTS ---\n");
+    }
 
     public void start() {
+        
         Weapon pistol = new Weapon("Pistol", 15);
         player = new Player(100, pistol);
         player.addAmmo(20);
 
         System.out.println("💀 Welcome to The Last Stand: Oily Apocalypse 💀");
 
+
+
         while (player.getHealth() > 0 && wave <= maxWaves) {
             Zombie z;
+
+
 
             if (wave == 9) {
                 System.out.println("\n🎵 A soft R&B intro begins to play...");

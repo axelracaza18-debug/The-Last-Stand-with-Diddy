@@ -14,6 +14,12 @@ public class DiddlerBoss extends Zombie {
     @Override
     public void attack(Player p) {
 
+        // 20% chance boss slips and wastes a turn
+        if (Math.random() < 0.20) {
+            System.out.println("😵 The Diddler slips on oil and WHIFFS completely! You take NO damage.");
+            return;
+        }
+
         // If ultimate was charging last turn, resolve it now
         if (preparingUltimate) {
             preparingUltimate = false;
@@ -77,7 +83,7 @@ public class DiddlerBoss extends Zombie {
     }
 
     private void freakOffSlam(Player p) {
-        int min = 25, max = 40;
+        int min = 15, max = 25;
         int dmg = min + (int)(Math.random() * (max - min + 1));
         System.out.println("💥 Freak-Off Slam! The Diddler slides in and SMASHES you for " + dmg + " damage!");
         p.takeDamage(dmg);
@@ -92,7 +98,7 @@ public class DiddlerBoss extends Zombie {
     private void oilyTwirl(Player p) {
         System.out.println("🌀 Oily Twirl — The Diddler spins and flings burning oil!");
         int hits = 3;
-        int perHitMin = 10, perHitMax = 15;
+        int perHitMin = 6, perHitMax = 9;
         int total = 0;
         for (int i = 0; i < hits; i++) {
             int hit = perHitMin + (int)(Math.random() * (perHitMax - perHitMin + 1));
@@ -133,7 +139,7 @@ public class DiddlerBoss extends Zombie {
             this.takeDamage(counterDmg);
             System.out.println("→ The Diddler takes " + counterDmg + " counter damage!");
         } else {
-            int finalDmg = 80;
+            int finalDmg = 55;
             System.out.println("💥 You are swept by the Oil Tsunami for " + finalDmg + " damage!");
             p.takeDamage(finalDmg);
 
