@@ -84,6 +84,34 @@ public class Game {
 
         while (player.getHealth() > 0 && wave <= maxWaves) {
             Zombie z;
+            // === CUTSCENES per wave ===
+            if (wave == 1) {
+                Displays.typewriter("Zack steps out into the ruined streets. The smell of smoke hits him first...");
+            }
+
+            if (wave == 3) {
+                Displays.typewriter("Zack wipes blood from his arm. 'I can't stop now... I need to reach Greyfall.'");
+            }
+
+            if (wave == 5) {
+                Displays.typewriter("A loud explosion shakes the city. Zack sees smoke rising from Greyfall Penitentiary.");
+            }
+
+            if (wave == 7) {
+                Displays.typewriter("Zack approaches the prison gates... 'Something’s waiting for me inside.'");
+            }
+
+            if (wave == 8) {
+                Displays.typewriter("The cafeteria doors slam shut behind him. 'What… what is that thing?'");
+            }
+
+            if (wave == 9) {
+                Displays.typewriter("Zack enters the underground hall. Purple lights flicker. A voice starts singing…");
+            }
+
+            if (wave == 10) {
+                Displays.typewriter("Zack reaches Sector X-19. The air turns cold. 'This… this is where it all began.'");
+            }
 
 
 
@@ -255,4 +283,9 @@ public class Game {
             System.out.println("Exiting to main menu...");
         }
     }
+
+
 }
+
+
+
