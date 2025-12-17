@@ -86,7 +86,19 @@ public class Game {
             Zombie z;
             // === CUTSCENES per wave ===
             if (wave == 1) {
-                Displays.typewriter("Zack steps out into the ruined streets. The smell of smoke hits him first...");
+                Displays.typewriter("Zack is packing his stuff, and preparing to fight the greater good\n");
+                Displays.typewriter("Zack steps out into the ruined streets. The smell of smoke hits him first...\n");
+                Displays.typewriter("He saw the chaos\n");
+                Displays.typewriter("Realizing his city that he was born. No longer the city he knows\n");
+                Displays.typewriter("And suddenly, he got attacked by an Oily infected cop\n");
+                Displays.typewriter("He was unprepared for the attack\n");
+                Displays.typewriter("He resisted... resisted\n");
+                Displays.typewriter("Until he saw a handgun on the Oily infected cop\n");
+                Displays.typewriter("He grab the handgun and shot the Oily infected cop right through the face\n");
+                Displays.typewriter("Zack immediately grab a clip from the corpse");
+                Displays.typewriter("He said\n");
+                Displays.typewriter("'Time to make things right' (handgun clicks)");
+                        
             }
 
             if (wave == 3) {
