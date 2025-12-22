@@ -5,6 +5,8 @@ public class Game {
     private Player player;
     private Scanner sc = new Scanner(System.in);
     private int wave = 1;
+
+
     private final int maxWaves = 10;
     public void showIntro() {
         String intro1 =
@@ -71,7 +73,37 @@ public class Game {
 
         System.out.println("\n--- GAME STARTS ---\n");
     }
+    private void zackDialogueAfterWave(int wave) {
+        switch (wave) {
+            case 1 -> Displays.typewriter(
+                    "Zack wipes blood from his hands.\n" +
+                            "\"I never wanted this... but running won't fix anything.\"");
+            case 2 -> Displays.typewriter(
+                    "\"Damn.. they keep spawning out of nowhere\"\n"+
+                         "Zack picks up a torn news print, soiled in oil\n."+
+                         "\"...Authorities confirm the first abnormal incident was logged\"\n"+
+                        "\" at greyfall penitentiary-three hours before the citywide outbreak\"\n"+
+                        "*Zack exhales slowly\n"+
+                         "\"Greyfall... of course\n"
 
+                    );
+
+             case 4 -> Displays.typewriter("\"Greyfall.. I know im scared but.. here i come\"\n");
+
+             case 5 -> Displays.typewriter("*Zack suddenly trembled*\n"+
+                        "*A sudden weird growl inside the hallway that scared Zack"+
+                        "\"what the hell was that?\"\n"+
+                         "*Growl*"+
+                         "\"that growling... it's not an ordinary infected\"\n"+
+                         "\"This might be the end of me\n"
+             );
+
+
+
+
+
+        }
+    }
     public void start() {
         
         Weapon pistol = new Weapon("Pistol", 15);
@@ -86,18 +118,26 @@ public class Game {
             Zombie z;
             // === CUTSCENES per wave ===
             if (wave == 1) {
-                Displays.typewriter("Zack is packing his stuff, and preparing to fight the greater good\n");
+                Displays.typewriter("Zack packed what little he had.\n");
+                Displays.typewriter("No plan. No Backup... Just scared");
                 Displays.typewriter("Zack steps out into the ruined streets. The smell of smoke hits him first...\n");
+                Displays.typewriter("Sirens are wailing\n");
+                Displays.typewriter("People are screaming\n");
                 Displays.typewriter("He saw the chaos\n");
-                Displays.typewriter("Realizing his city that he was born. No longer the city he knows\n");
-                Displays.typewriter("And suddenly, he got attacked by an Oily infected cop\n");
-                Displays.typewriter("He was unprepared for the attack\n");
-                Displays.typewriter("He resisted... resisted\n");
-                Displays.typewriter("Until he saw a handgun on the Oily infected cop\n");
+                Displays.typewriter("This is was his hometown\n");
+                Displays.typewriter("Or atleast... it used to be\n\n");
+                Displays.typewriter("Something rushed him\n");
+                Displays.typewriter("An infected cop - eyes glazed, body leaking oil\n\n");
+                Displays.typewriter("Zack was unprepared\n");
+                Displays.typewriter("He fought back with panic\n");
+                Displays.typewriter("Struggling and struggling..\n");
+                Displays.typewriter("Not until he saw a handgun on the oily infected cop\n");
                 Displays.typewriter("He grab the handgun and shot the Oily infected cop right through the face\n");
-                Displays.typewriter("Zack immediately grab a clip from the corpse");
+                Displays.typewriter("Zack stared at the corpse.\n");
+                Displays.typewriter("He immediately grab a magazine from the corpse shakingly\n");
                 Displays.typewriter("He said\n");
-                Displays.typewriter("'Time to make things right' (handgun clicks)");
+                Displays.typewriter("'Time to make things right'\n");
+                Displays.typewriter("*handgun clicks*");
                         
             }
 
@@ -218,7 +258,7 @@ public class Game {
             if (player.getHealth() > 0) {
                 System.out.println("✅ You survived wave " + wave + "!");
                 handleLootDrop();
-
+                zackDialogueAfterWave(wave);
                 // Weapon upgrades
                 if (wave == 3) player.setWeapon(new Weapon("Shotgun", 25));
                 else if (wave == 5) player.setWeapon(new Weapon("Assault Rifle", 35));
