@@ -91,7 +91,7 @@ public class Game {
              case 4 -> Displays.typewriter("\"Greyfall.. I know im scared but.. here i come\"\n");
 
              case 5 -> Displays.typewriter("*Zack suddenly trembled*\n"+
-                        "*A sudden weird growl inside the hallway that scared Zack"+
+                        "*A sudden weird growl that scared Zack"+
                         "\"what the hell was that?\"\n"+
                          "*Growl*"+
                          "\"that growling... it's not an ordinary infected\"\n"+
@@ -99,13 +99,29 @@ public class Game {
              );
 
 
+             case 6 -> Displays.typewriter("\"*gasping for air* \n"+
+                                         "\"WHAT THE HELL WAS THAT?!"+
+                                           "\"AND HOW THE FUCK? DID HE KNOW MY NAME?\n"+
+                                          "THIS IS STARTING TO BECOME A NIGHTMARE!..."
+                     );
+
+             case 7 -> Displays.typewriter("Zack wipes sweat from his brow\n"+
+                                                "\"Whoever that was.. he's playing with me.\"\n"+
+                                                "*Takes a deep breathe*\n"+
+                                                "\"Fine. I'll play too\n"+
+                                                "*Gun clicks*"
+
+
+                                      );
 
 
 
         }
     }
+
+
     public void start() {
-        
+
         Weapon pistol = new Weapon("Pistol", 15);
         player = new Player(100, pistol);
         player.addAmmo(20);
@@ -138,33 +154,69 @@ public class Game {
                 Displays.typewriter("He said\n");
                 Displays.typewriter("'Time to make things right'\n");
                 Displays.typewriter("*handgun clicks*");
-                        
             }
-
             if (wave == 3) {
                 Displays.typewriter("Zack wipes blood from his arm. 'I can't stop now... I need to reach Greyfall.'");
             }
 
             if (wave == 5) {
                 Displays.typewriter("A loud explosion shakes the city. Zack sees smoke rising from Greyfall Penitentiary.");
+                Displays.typewriter("Zack was trembling with fear... 'hoping this will be all worth it.'");
+            }
+            if (wave ==6){
+                Displays.typewriter("Greyfall Penitentiary looms ahead");
+                Displays.typewriter("As Zack walks ahead");
+                Displays.typewriter("Floodlights flicker. The gates are half-open");
+                Displays.typewriter("Zack tightens his grip");
+                Displays.typewriter("\"This is it...\"");
+                Displays.typewriter("A slow clap echoes from inside the gates");
+                Displays.typewriter("*Footstep*");
+                Displays.typewriter("Someone humming in a broken tune");
+                Displays.typewriter("\"You should've have stayed home, janitor");
+
             }
 
-            if (wave == 7) {
-                Displays.typewriter("Zack approaches the prison gates... 'Something’s waiting for me inside.'");
-            }
+            if (wave == 7) { Displays.typewriter("Zack stepped deeper into Greyfall, passing heavy reinforced doors.\n.'");
+                             Displays.typewriter("A rusted sign hung crooked on the wall:\n");
+                             Displays.typewriter("He pushed inside.\n");
+                             Displays.typewriter("Rows of bolted metal charis faced a small stage.\n");
+                             Displays.typewriter("Ceiling fans turned slowly, creaking with each rotation\n\n");
+                             Displays.typewriter("Silence\n");
+                             Displays.typewriter("Not even the infected the infected wandered here.\n");
+                             Displays.typewriter("Zack whispered:\"what was this place...? \"\n\n");
+                             Displays.typewriter("Then-\n");
+                             Displays.typewriter("A spotlight flickered on, illuminating the stage.\n");
+                             Displays.typewriter("Dust drifted through the beam like falling snow.\n\n");
+                             Displays.typewriter("A microphone lowered from the ceiling with a metallic screech.\n\n");
+                             Displays.typewriter("Someone hummed softly, perfectly on pitch\n");
+                             Displays.typewriter("Footsteps echoed behind the stage curtain.\n\n");
+                             Displays.typewriter("A voice spoke smoothly:\n");
+                             Displays.typewriter("\"I missed the crowd... but you'll do just fine.\"\n\n");
+                             Displays.typewriter("*evil laugh echoes*\n\n");
+                             Displays.typewriter("\"hehehehehehehe\"\n");
+                             Displays.typewriter("Zack grab his gun\n");
+                             Displays.typewriter("And aims towards the stage\n");
+                             Displays.typewriter("\"Show yourself.\"\n\n");
+                             Displays.typewriter("The curtain slid open.\n");
+                             Displays.typewriter("Zack flinched and tightened his grip\n\n");
+                             Displays.typewriter("A man in a filthy gold suit emerged, bowing with exaggerate grace.\n\n");
+                             Displays.typewriter("\"They call me the Golden Crooner,\"he said with a grin.\n");
+                             Displays.typewriter("\"And darling... you're front row.\"\n\n");
+                             Displays.typewriter("Music cracked through the old speakers.\n");
+                             Displays.typewriter("Doors suddenly shut behind Zack.\n\n");
+                             Displays.typewriter("Zack's legs are shaking in trembled");
+                             Displays.typewriter("Zack muttered:\"Great... another freak with a theme");
 
+            }
             if (wave == 8) {
                 Displays.typewriter("The cafeteria doors slam shut behind him. 'What… what is that thing?'");
             }
-
             if (wave == 9) {
                 Displays.typewriter("Zack enters the underground hall. Purple lights flicker. A voice starts singing…");
             }
 
-            if (wave == 10) {
-                Displays.typewriter("Zack reaches Sector X-19. The air turns cold. 'This… this is where it all began.'");
+            if (wave == 10) { Displays.typewriter("Zack reaches Sector X-19. The air turns cold. 'This… this is where it all began.'");
             }
-
 
 
             if (wave == 9) {

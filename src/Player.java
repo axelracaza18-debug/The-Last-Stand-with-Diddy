@@ -1,6 +1,7 @@
 // ===== PLAYER =====
 public class Player {
     private int health;
+    private final int maxHealth=100;
     private int healAmount = 15;
     private Weapon weapon;
     private int ammo = 20;
@@ -9,9 +10,10 @@ public class Player {
     private Inventory inventory = new Inventory();
 
     public Player(int health, Weapon startingWeapon) {
-        this.health = health;
+        this.health = Math.min(health, maxHealth);
         this.weapon = startingWeapon;
     }
+
     // new fields (add near the other fields)
     private boolean stunned = false;
     private int dotDamage = 0;     // damage applied each tick (Damage Over Time)
@@ -65,18 +67,29 @@ public class Player {
     }
 
     public void heal() {
-        health += healAmount;
-        System.out.println("🩹 Healed +15 HP. Current HP: " + health);
+        if (health >= maxHealth) {
+            System.out.println("❤️ Health is already full!");
+            return;
+        }
+
+        health = Math.min(health + healAmount, maxHealth);
+        System.out.println("🩹 Healed +" + healAmount + " HP. Current HP: " + health + "/" + maxHealth);
     }
 
     public void useMedkit() {
+        if (health >= maxHealth) {
+            System.out.println("❤️ Health is already full!");
+            return;
+        }
+
         if (inventory.useItem("Medkit")) {
-            health += 30;
-            System.out.println("💊 Used Medkit! +30 HP. Current HP: " + health);
+            health = Math.min(health + 40, maxHealth);
+            System.out.println("💊 Used Medkit! +40 HP. Current HP: " + health + "/" + maxHealth);
         } else {
             System.out.println("❌ No Medkits left!");
         }
     }
+
 
     public void takeDamage(int dmg) {
         health -= dmg;
