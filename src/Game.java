@@ -113,7 +113,40 @@ public class Game {
 
 
                                       );
+             case 8 -> Displays.typewriter("The spotlight snaps off. The music room falls silent\n"+
+                                                 "The Golden Crooner staggered, clutching his chest\n"+
+                                                 "Oil spilled from his mouth like ink\n"+
+                                                 "Zack takes a step forward, exhausted but relieved\n"+
+                                                 "\"Is it over..?\"\n\n"+
+                                                 "Suddenly, the busted stage speakers crackle back to life\n"+
+                                                 "Golden Crooner weakly taps his mic, voice glitching"+
+                                                 "\"Encore... encore... encore..\"\n"+
+                                                 "Zack flinches"+
+                                                 "The curtains twitch even though no wind is moving"+
+                                                 "Golden Crooner slowly lifts his head, one glowing eye reactivating"+
+                                                 "*Golden Crooner(Distorted)*"+
+                                                 "\"you think... this is where the song ends?\"\n"+
+                                                 "\"hehehe... cutest mistake you've made all night\"\n"+
+                                                 "He coughs out sparks\n"+
+                                                 "not defeated, but lurking\n"+
+                                                 "He drags himself backward into the shadows of the backstage hallway"+
+                                                 "Golden Crooner: "+
+                                                 "Intermission, kid.. go catch your breath.\n"+
+                                                 "The next act starts in the cafeteria...\n"+
+                                                 "He slides fully into darkness\n"+
+                                                 "His laugh echoing so faint it's so faint it's unclear if it's real or just in Zack's head\n"+
+                                                 "Zack jumps, flashlight trembling slightly as he holds it up\n"+
+                                                  "ZacK: "+
+                                                 "\"The cafeteria...? Why the cafeteria...?\"\n"+
+                                                 "THe hallway lights flicker red\n"+
+                                                 "\"CAFETERIA\"\n"+
+                                                 "signs glow like warnings"
 
+
+
+
+
+             );
 
 
         }
