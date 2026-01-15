@@ -105,48 +105,40 @@ public class Game {
                                           "THIS IS STARTING TO BECOME A NIGHTMARE!..."
                      );
 
-             case 7 -> Displays.typewriter("Zack wipes sweat from his brow\n"+
-                                                "\"Whoever that was.. he's playing with me.\"\n"+
-                                                "*Takes a deep breathe*\n"+
-                                                "\"Fine. I'll play too\n"+
-                                                "*Gun clicks*"
-
-
-                                      );
-             case 8 -> Displays.typewriter("The spotlight snaps off. The music room falls silent\n"+
-                                                 "The Golden Crooner staggered, clutching his chest\n"+
-                                                 "Oil spilled from his mouth like ink\n"+
-                                                 "Zack takes a step forward, exhausted but relieved\n"+
-                                                 "\"Is it over..?\"\n\n"+
-                                                 "Suddenly, the busted stage speakers crackle back to life\n"+
-                                                 "Golden Crooner weakly taps his mic, voice glitching"+
-                                                 "\"Encore... encore... encore..\"\n"+
-                                                 "Zack flinches"+
-                                                 "The curtains twitch even though no wind is moving"+
-                                                 "Golden Crooner slowly lifts his head, one glowing eye reactivating"+
-                                                 "*Golden Crooner(Distorted)*"+
-                                                 "\"you think... this is where the song ends?\"\n"+
-                                                 "\"hehehe... cutest mistake you've made all night\"\n"+
-                                                 "He coughs out sparks\n"+
-                                                 "not defeated, but lurking\n"+
-                                                 "He drags himself backward into the shadows of the backstage hallway"+
-                                                 "Golden Crooner: "+
-                                                 "Intermission, kid.. go catch your breath.\n"+
-                                                 "The next act starts in the cafeteria...\n"+
-                                                 "He slides fully into darkness\n"+
-                                                 "His laugh echoing so faint it's so faint it's unclear if it's real or just in Zack's head\n"+
-                                                 "Zack jumps, flashlight trembling slightly as he holds it up\n"+
-                                                  "ZacK: "+
-                                                 "\"The cafeteria...? Why the cafeteria...?\"\n"+
-                                                 "THe hallway lights flicker red\n"+
-                                                 "\"CAFETERIA\"\n"+
-                                                 "signs glow like warnings"
+            case 7 -> Displays.typewriter("The spotlight snaps off. The music room falls silent\n"+
+                    "The Golden Crooner staggered, clutching his chest\n"+
+                    "Oil spilled from his mouth like ink\n"+
+                    "Zack takes a step forward, exhausted but relieved\n"+
+                    "\"Is it over..?\"\n\n"+
+                    "Suddenly, the busted stage speakers crackle back to life\n"+
+                    "Golden Crooner weakly taps his mic, voice glitching"+
+                    "\"Encore... encore... encore..\"\n"+
+                    "Zack flinches"+
+                    "The curtains twitch even though no wind is moving"+
+                    "Golden Crooner slowly lifts his head, one glowing eye reactivating"+
+                    "*Golden Crooner(Distorted)*"+
+                    "\"you think... this is where the song ends?\"\n"+
+                    "\"hehehe... cutest mistake you've made all night\"\n"+
+                    "He coughs out sparks\n"+
+                    "not defeated, but lurking\n"+
+                    "He drags himself backward into the shadows of the backstage hallway"+
+                    "Golden Crooner: "+
+                    "Intermission, kid.. go catch your breath.\n"+
+                    "The next act starts in the cafeteria...\n"+
+                    "He slides fully into darkness\n"+
+                    "His laugh echoing so faint it's so faint it's unclear if it's real or just in Zack's head\n"+
+                    "Zack jumps, flashlight trembling slightly as he holds it up\n"+
+                    "ZacK: "+
+                    "\"The cafeteria...? Why the cafeteria...?\"\n"+
+                    "The hallway lights flicker red\n"+
+                    "\"CAFETERIA\"\n"+
+                    "signs glow like warnings"
+            );
 
 
 
 
 
-             );
 
 
         }
@@ -242,7 +234,29 @@ public class Game {
 
             }
             if (wave == 8) {
-                Displays.typewriter("The cafeteria doors slam shut behind him. 'What… what is that thing?'");
+                Displays.typewriter("Zack pushes through the swinging cafeteria doors\n");
+                Displays.typewriter("The air is warm.... too warm\n");
+                Displays.typewriter("Pastry trays are scattered across the floor like someone fled mid-bake\n");
+                Displays.typewriter("Zack swallows hard, flashlight beam shaking\n");
+                Displays.typewriter("\"Okay... just check the room... then figure out where that metal creep went");
+                Displays.typewriter("Suddenly, every refrigerator hums on at once\n");
+                Displays.typewriter("The lights above flicker a sugary pink\n");
+                Displays.typewriter("Something wet plops onto the tile behind Zack\n");
+                Displays.typewriter("He spins--\n");
+                Displays.typewriter("A cupcake... but wrong\n");
+                Displays.typewriter("Icing twitches like muscle... sprinkles wriggle like tiny larvae\n");
+                Displays.typewriter("Then more drop from the ceiling trays\n");
+                Displays.typewriter("Splat\n");
+                Displays.typewriter("Splat\n");
+                Displays.typewriter("Splat\n");
+                Displays.typewriter("Zack steps back, gagging\n");
+                Displays.typewriter("\"Dude-why is it alive?! It's supposed to be FOOD!\"\n");
+                Displays.typewriter("The ovens beep in rapid succession\n");
+                Displays.typewriter("*BEEP-BEEP-BEEP-BEEP-BEEP*\n");
+                Displays.typewriter("Oven doors burst open\n");
+                Displays.typewriter("Something heavy crawls out\n");
+                Displays.typewriter("A massive cupcake abomination rises, frosting smeared across jagged teeth\n");
+                Displays.typewriter
             }
             if (wave == 9) {
                 Displays.typewriter("Zack enters the underground hall. Purple lights flicker. A voice starts singing…");
