@@ -256,7 +256,25 @@ public class Game {
                 Displays.typewriter("Oven doors burst open\n");
                 Displays.typewriter("Something heavy crawls out\n");
                 Displays.typewriter("A massive cupcake abomination rises, frosting smeared across jagged teeth\n");
-                Displays.typewriter
+                Displays.typewriter("Piping bags embedded like organs squeeze and pulese\n");
+                Displays.typewriter("*Cupcake Monster*\n");
+                Displays.typewriter("(gurgling)");
+                Displays.typewriter("\"Frr...esh.. fud...hot....out...da..OVEN\"\n");
+                Displays.typewriter("Zack nearly drops his flashlight\n");
+                Displays.typewriter("\"Nope. Nope. Nope. I- I didn't order desert. Hard pass\"\n");
+                Displays.typewriter("Cupcake monster shudders, icing cracking dry like skin\n");
+                Displays.typewriter("\"Maa-ma.. needs... t-taste... tester\"\n");
+                Displays.typewriter("All refrigerators slam open\n");
+                Displays.typewriter("Swarming mini-cupcakes spill out chanting in glitchy voices\n");
+                Displays.typewriter("\"Taste! Taste! Taste! Taste!\"\n");
+                Displays.typewriter("Zack backs into the center of the cafeteria\n");
+                Displays.typewriter("Lights flick to a blinding bakery-pink\n");
+                Displays.typewriter("The PA speaker crackles\n");
+                Displays.typewriter("Golden Crooner's voice, distorted:\n");
+                Displays.typewriter("\"Break's over, kid... Intermission's done,\"\n");
+                Displays.typewriter("Zack whisper:\n");
+                Displays.typewriter("\"I hate this place so much...\"\n");
+                Displays.typewriter("Cupcake Monster roars, frosting splattering the tiles");
             }
             if (wave == 9) {
                 Displays.typewriter("Zack enters the underground hall. Purple lights flicker. A voice starts singing…");
