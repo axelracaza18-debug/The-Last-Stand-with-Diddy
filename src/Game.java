@@ -137,7 +137,42 @@ public class Game {
 
 
 
+      case 8 -> Displays.typewriter("Zack waits until the frosting stops bubbling\n"+
+                                         "\"Finally, silence.\"\n"+
+                                         "He steps closer and notices something sticking out from under the monster's melted\n"+
+                                         "icing-- not food, but plastic.\n"+
+                                         "Zack kneels and pulls out a sticky access card\n"+
+                                         "The label is scratched but readable:\n"+
+                                         "MAINTENANCE- AUTHORIZED STAFF ONLY\n"+
+                                         "SUBSECTION: STORAGE & HVAC\n"+
+                                         "Zack wipes frosting off the scanner strip with his sleeve."+
+                                         "\"Finally... something that makes sense.\"\n"+
+                                         "As he stands, the cafeteria intercom pops alive with static.\n"+
+                                         "Golden Crooner (distant, smooth):\n"+
+                                        "\"careful, kid... the janitors knew more than the teachers ever did.\"\n"+
+                                        "The intercom cuts. Silence again-heavier this time.\n"+
+                                        "Zack pockets the card and heads for the exit\n"+
+                                        "He pushes through the swinging cafeteria\n"+
+                                        "doors into a dim hallway\n"+
+                                        "Emergency lights hum overhead, pointing the way like breadcrumbs\n"+
+                                        "A glowing sign flickers red:\n"+
+                                        "MAINTENANCE STATION ACCESS\n"+
+                                        "EAST WING\n"+
+                                        "Zack sighs\n"+
+                                        "\"Maintenance room.. great. Buckets,mops,and existential dread.\"\n"+
 
+
+
+
+
+
+
+
+
+
+
+
+      );
 
 
 
