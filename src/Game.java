@@ -159,7 +159,7 @@ public class Game {
                                         "MAINTENANCE STATION ACCESS\n"+
                                         "EAST WING\n"+
                                         "Zack sighs\n"+
-                                        "\"Maintenance room.. great. Buckets,mops,and existential dread.\"\n"+
+                                        "\"Maintenance room.. great. Buckets,mops,and existential dread.\"\n"
 
 
 
