@@ -136,30 +136,120 @@ public class Game {
             );
 
 
+            case 8 -> Displays.typewriter(
+                    "Zack waits until the frosting stops bubbling\n"+
+                    "\"Finally, silence.\"\n\n"+
 
-      case 8 -> Displays.typewriter("Zack waits until the frosting stops bubbling\n"+
-                                         "\"Finally, silence.\"\n"+
-                                         "He steps closer and notices something sticking out from under the monster's melted\n"+
-                                         "icing-- not food, but plastic.\n"+
-                                         "Zack kneels and pulls out a sticky access card\n"+
-                                         "The label is scratched but readable:\n"+
-                                         "MAINTENANCE- AUTHORIZED STAFF ONLY\n"+
-                                         "SUBSECTION: STORAGE & HVAC\n"+
-                                         "Zack wipes frosting off the scanner strip with his sleeve."+
-                                         "\"Finally... something that makes sense.\"\n"+
-                                         "As he stands, the cafeteria intercom pops alive with static.\n"+
-                                         "Golden Crooner (distant, smooth):\n"+
-                                        "\"careful, kid... the janitors knew more than the teachers ever did.\"\n"+
-                                        "The intercom cuts. Silence again-heavier this time.\n"+
-                                        "Zack pockets the card and heads for the exit\n"+
-                                        "He pushes through the swinging cafeteria\n"+
-                                        "doors into a dim hallway\n"+
-                                        "Emergency lights hum overhead, pointing the way like breadcrumbs\n"+
-                                        "A glowing sign flickers red:\n"+
-                                        "MAINTENANCE STATION ACCESS\n"+
-                                        "EAST WING\n"+
-                                        "Zack sighs\n"+
-                                        "\"Maintenance room.. great. Buckets,mops,and existential dread.\"\n"
+                    "He steps closer and notices something sticking out from under the monster's melted icing\n"+
+                    "Not food. Plastic.\n\n"+
+
+                    "Zack kneels and pulls out a sticky access card\n"+
+                    "The label is scratched, but readable:\n\n"+
+
+                    "MAINTENANCE – AUTHORIZED STAFF ONLY\n"+
+                    "SUBSECTION: STORAGE & HVAC\n\n"+
+
+                    "Zack wipes icing off the scanner strip with his sleeve\n"+
+                    "\"Finally... something that makes sense.\"\n\n"+
+
+                    "The cafeteria intercom crackles alive with static\n\n"+
+
+                    "*Golden Crooner (distant, smooth)*:\n"+
+                    "\"Careful, kid...\"\n"+
+                    "\"The janitors knew more than the teachers ever did.\"\n\n"+
+
+                    "The intercom cuts\n"+
+                    "Silence returns—heavier than before\n\n"+
+
+                    "Zack pockets the card and heads for the exit\n"+
+                    "He pushes through the swinging cafeteria doors\n\n"+
+
+                    "A dim hallway stretches ahead\n"+
+                    "Emergency lights hum overhead, guiding him like breadcrumbs\n\n"+
+
+                    "A flickering red sign buzzes:\n"+
+                    "MAINTENANCE STATION ACCESS\n"+
+                    "EAST WING\n\n"+
+
+                    "Zack exhales\n"+
+                    "\"Maintenance room... great.\"\n"+
+                    "\"Buckets, mops, and existential dread.\"\n"
+            );
+
+case 9 -> Displays.typewriter(
+        "Silk Daddy collapses, the music warping into static\n"+
+                "The purple lights flicker… then die\n\n"+
+
+                "Silence\n"+
+                "Heavy. Absolute\n\n"+
+
+                "Zack steadies his breathing\n"+
+                "Then steps past the body\n\n"+
+
+                "The hallway stretches farther than it should\n"+
+                "Metal walls give way to glass\n"+
+                "Then to something much older\n\n"+
+
+                "The lab opens up\n"+
+                "Vast\n"+
+                "Endless\n\n"+
+
+                "Rows of containment chambers line the floor below\n"+
+                "Some shattered\n"+
+                "Some occupied\n\n"+
+
+                "Labels flash past:\n"+
+                "SUBJECT 014 – FAILED\n"+
+                "SUBJECT 022 – AGGRESSIVE\n"+
+                "SUBJECT 031 – UNSTABLE\n\n"+
+
+                "Zack approaches a terminal\n"+
+                "The screen activates on its own\n\n"+
+
+                "ARCHIVE ACCESS: RESTRICTED\n"+
+                "LEVEL: EXECUTIVE\n\n"+
+
+                "Files open\n"+
+                "Names are blacked out\n"+
+                "Photos distorted\n"+
+                "Only titles remain:\n\n"+
+
+                "— HIGH-PROFILE DONOR\n"+
+                "— MEDIA ICON\n"+
+                "— PHILANTHROPIST\n"+
+                "— MUSIC INDUSTRY ASSET\n\n"+
+
+                "Zack scrolls\n"+
+                "His stomach sinks\n\n"+
+
+                "Notes appear:\n"+
+                "'Subjects sought immunity'\n"+
+                "'Subjects sought pleasure'\n"+
+                "'Subjects believed money meant safety'\n\n"+
+
+                "One file glitches repeatedly\n"+
+                "SUBJECT CODENAME: SILK EMPEROR\n"+
+                "STATUS: FAILED\n\n"+
+
+                "Footage plays\n"+
+                "A man screaming as the process overtakes him\n"+
+                "Music blaring to drown it out\n\n"+
+
+                "Zack shuts the terminal off\n"+
+                "Hands shaking\n\n"+
+
+                "\"This place wasn't hiding monsters…\"\n"+
+                "\"It was protecting them\"\n\n"+
+
+                "Deep in the facility\n"+
+                "Something wakes up\n\n"+
+
+                "WARNING:\n"+
+                "CORE SUBJECT STIRRING\n\n"+
+
+                "Zack looks down the corridor\n"+
+                "No turning back now"
+);
 
 
 
@@ -172,7 +262,6 @@ public class Game {
 
 
 
-      );
 
 
 
@@ -312,7 +401,36 @@ public class Game {
                 Displays.typewriter("Cupcake Monster roars, frosting splattering the tiles");
             }
             if (wave == 9) {
-                Displays.typewriter("Zack enters the underground hall. Purple lights flicker. A voice starts singing…");
+                Displays.typewriter("The maintenance door slides open with a tired groan\n");
+                Displays.typewriter("The air inside is warm... too warm\n\n");
+                Displays.typewriter("Zack steps in\n");
+                Displays.typewriter("Mops hang like bodies on hooks\n");
+                Displays.typewriter("Bucket filled with dark water ripple slightly\n");
+                Displays.typewriter("Someone was here recently\n\n");
+                Displays.typewriter("The access card reader blinks green\n");
+                Displays.typewriter("A hidden panel slides open behind a supply shelf\n");
+                Displays.typewriter("Revealing a narrow hallway Zack wasn't supposed to see\n");
+                Displays.typewriter("Zack mutters: \n");
+                Displays.typewriter("\"Janitor my ass...\"\n\n");
+                Displays.typewriter("Soft music hums through the vents\n");
+                Displays.typewriter("Slow. Smooth. Almost comforting\n\n");
+                Displays.typewriter("A voice slides through the speakers:\n");
+                Displays.typewriter("\"Easy there, handsome...\"\n");
+                Displays.typewriter("\"You look tense\"\n\n");
+                Displays.typewriter("Zack spins, gun raised\n");
+                Displays.typewriter("\"Show yourself.\"\n\n");
+                Displays.typewriter("The lights dim to purple\n");
+                Displays.typewriter("A figure leans against a doorway at the far end\n");
+                Displays.typewriter("Silk shirt. Gold chain. Bare feet on concrete\n\n");
+                Displays.typewriter("He smiles lazily\n");
+                Displays.typewriter("\"Name's Silk Daddy\"\n");
+                Displays.typewriter("\"I keep this place.... comfortable\"\n\n");
+                Displays.typewriter("The door slams shut behind Zack\n");
+                Displays.typewriter("The musc grows louder\n\n");
+                Displays.typewriter("Silk Daddy chuckles softly:\n");
+                Displays.typewriter("\"Relax... maintenance always takes it's time\"\n");
+
+
             }
 
             if (wave == 10) { Displays.typewriter("Zack reaches Sector X-19. The air turns cold. 'This… this is where it all began.'");

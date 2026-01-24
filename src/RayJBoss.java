@@ -16,9 +16,9 @@ public class RayJBoss extends Zombie {
         if (chargingUltimate) {
             chargingUltimate = false;
 
-            System.out.println("\n🎵 *Ray J hits the ONE WISH CHORUS!!* 🎵");
+            System.out.println("\n🎵 *Silk Daddy hits the ONE WISH CHORUS!!* 🎵");
             System.out.println("🌈 \"If I had one wishhhh...\" echoes through the arena...");
-            System.out.println("💥 Ray J unleashes: THE FREAK OFF!");
+            System.out.println("💥 Silk Daddy unleashes: THE FREAK OFF!");
 
             boolean dodged = false; // You will add dodge later
 
@@ -45,13 +45,13 @@ public class RayJBoss extends Zombie {
         if (r < 0.30) {
             // Smooth slap
             int dmg = attackPower + 10;
-            System.out.println("🎶 Ray J glides forward with a silky smooth SLAP! -" + dmg);
+            System.out.println("🎶 Silk Daddy glides forward with a silky smooth SLAP! -" + dmg);
             p.takeDamage(dmg);
         }
 
         else if (r < 0.60) {
             // R&B echo attack
-            System.out.println("🔊 Ray J overlays his vocals — R&B Echo Attack!");
+            System.out.println("🔊 Silk Daddy overlays his vocals — R&B Echo Attack!");
             int hits = 3;
             for (int i = 0; i < hits; i++) {
                 p.takeDamage(8);
@@ -61,7 +61,7 @@ public class RayJBoss extends Zombie {
 
         else if (r < 0.80) {
             // Emotional Damage debuff
-            System.out.println("💔 Ray J hits you with EMOTIONAL DAMAGE lyrics.");
+            System.out.println("💔 Silk Daddy hits you with EMOTIONAL DAMAGE lyrics.");
             int dot = 6;
             int turns = 3;
             p.applyDamageOverTime(dot, turns);
@@ -70,7 +70,7 @@ public class RayJBoss extends Zombie {
         else {
             // Starts ultimate
             System.out.println("\n🎵 A soft R&B intro fills the arena...");
-            System.out.println("🌈 Ray J begins singing: \"If I had one wish...\"");
+            System.out.println("🌈 Silk Daddy begins singing: \"If I had one wish...\"");
             System.out.println("⚠️ He is preparing his ULTIMATE — The Freak Off!");
             chargingUltimate = true;
         }
