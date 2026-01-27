@@ -1,12 +1,12 @@
 // DiddlerBoss.java
-public class DiddlerBoss extends Zombie {
+public class SilkEmperor extends Zombie {
 
     private boolean preparingUltimate = false; // charging Grand Freak Off
     private boolean auraActive = false;        // Freak Off Aura active
     private int auraTurns = 0;                 // how long aura lasts (turns)
     private int baseAttack;                    // store base attackPower for buff toggles
 
-    public DiddlerBoss() {
+    public SilkEmperor() {
         super(450, 28, "The Diddler — Oily King of Chaos");
         this.baseAttack = this.attackPower;
     }

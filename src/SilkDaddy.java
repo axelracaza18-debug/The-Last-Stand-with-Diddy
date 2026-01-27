@@ -1,9 +1,9 @@
-public class RayJBoss extends Zombie {
+public class SilkDaddy extends Zombie {
 
     private boolean chargingUltimate = false;   // preparing One Wish attack
     private int slowTurns = 0;                  // applies slow debuff to player
 
-    public RayJBoss() {
+    public SilkDaddy() {
         super(340, 32, "Ray J — The R&B Menace 🎤");
     }
 

@@ -1,7 +1,7 @@
-public class EDPBoss extends Zombie {
+public class CupcakeMonster extends Zombie {
     private boolean preparingUltimate = false;
 
-    public EDPBoss() {
+    public CupcakeMonster() {
         super(320, 30, "EDP Boss 🔥");
     }
 
@@ -12,7 +12,7 @@ public class EDPBoss extends Zombie {
         if (preparingUltimate) {
             preparingUltimate = false;
 
-            System.out.println("⚠️ EDP charges with his Predator Lunge!");
+            System.out.println("⚠️ Cupcake Monster charges with his Predator Lunge!");
 
             // Later you will add dodge mechanic
             boolean dodged = false;

@@ -198,7 +198,7 @@ case 9 -> Displays.typewriter(
                 "Some shattered\n"+
                 "Some occupied\n\n"+
 
-                "Labels flash past:\n"+
+                "Status  labels flicker as Zack walks:\n"+
                 "SUBJECT 014 – FAILED\n"+
                 "SUBJECT 022 – AGGRESSIVE\n"+
                 "SUBJECT 031 – UNSTABLE\n\n"+
@@ -242,7 +242,8 @@ case 9 -> Displays.typewriter(
                 "\"It was protecting them\"\n\n"+
 
                 "Deep in the facility\n"+
-                "Something wakes up\n\n"+
+                "Something shifts\n\n"+
+                "Something old\n\n"+
 
                 "WARNING:\n"+
                 "CORE SUBJECT STIRRING\n\n"+
@@ -280,7 +281,7 @@ case 9 -> Displays.typewriter(
 
 
         while (player.getHealth() > 0 && wave <= maxWaves) {
-            Zombie z;
+            Zombie z = null;
             // === CUTSCENES per wave ===
             if (wave == 1) {
                 Displays.typewriter("Zack packed what little he had.\n");
@@ -433,8 +434,58 @@ case 9 -> Displays.typewriter(
 
             }
 
-            if (wave == 10) { Displays.typewriter("Zack reaches Sector X-19. The air turns cold. 'This… this is where it all began.'");
+            if (wave == 10) { Displays.typewriter("The final chamber hums softly\n");
+                Displays.typewriter("No alarms\n");
+                Displays.typewriter("No monsters\n");
+                Displays.typewriter("Just a single glass pod at the center of the room\n\n");
+                Displays.typewriter("Zack steps closer\n");
+                Displays.typewriter("The pod is empty\n");
+                Displays.typewriter("Clean\n");
+                Displays.typewriter("Maintained\n\n");
+                Displays.typewriter("A label etched into the glass:\n");
+                Displays.typewriter("SUBJECT 000 - STABLE\n\n");
+                Displays.typewriter("Zack's head pounds\n");
+                Displays.typewriter("Sharp\n");
+                Displays.typewriter("Sudden\n\n");
+                Displays.typewriter("Flashes tear through his mind\n");
+                Displays.typewriter("Bright lights\n");
+                Displays.typewriter("Cold restraints\n");
+                Displays.typewriter("A needle pressing into his arm\n\n");
+                Displays.typewriter("He stagers back\n");
+                Displays.typewriter("\"No.....\"\n\n");
+                Displays.typewriter("A terminal activates\n");
+                Displays.typewriter("It's screen flickers once\n");
+                Displays.typewriter("Then stabilize");
+                Displays.typewriter("PROJECT: MNEMOSYNE\n");
+                Displays.typewriter("STATUS: ACTIVE\n");
+                Displays.typewriter("MEMORY SUPPRESSION\n\n");
+                Displays.typewriter("Log Entry: \n");
+                Displays.typewriter("\"Subject awareness caused rejection in all prior trials'\"\n");
+                Displays.typewriter("\"Memory removal increased survival rate to 100%\"\n");
+                Displays.typewriter("A final file opens automatically\n");
+                Displays.typewriter("SUBJECT 000 - RELEASED\n");
+                Displays.typewriter("LOCATION: INTEGRATED\n\n");
+                Displays.typewriter("A photo loads\n");
+                Displays.typewriter("Distorted at first\n");
+                Displays.typewriter("Then clear\n\n");
+                Displays.typewriter("It's Zack\n\n");
+                Displays.typewriter("His breathing trembles\n");
+                Displays.typewriter("\"I was never trapped here\"\n");
+                Displays.typewriter("I was let go \"\n\n");
+                Displays.typewriter("The speakers crackle softly\n");
+                Displays.typewriter("a calm voice speaks:\n\n");
+                Displays.typewriter("\"you were the cure\"\n");
+                Displays.typewriter("\"And the cure must not remember\"\n\n");
+                Displays.typewriter("The lights begin shutting down\n");
+                Displays.typewriter("Section by Section\n");
+                Displays.typewriter("Zack turns toward the exit\n");
+                Displays.typewriter("Hand clenched\n");
+                Displays.typewriter("Mind fractured\n\n");
+                Displays.typewriter("As the screen fades:\n");
+                Displays.typewriter("\"MEMORY INTEGRITY: FAILING\"\n\n");
+                Displays.typewriter("TO BE CONTINUED....");
             }
+
 
 
             if (wave == 9) {
@@ -443,16 +494,20 @@ case 9 -> Displays.typewriter(
                 System.out.println("🌈 The lights dim. Purple fog fills the arena.");
                 System.out.println("🔥 Wave 9 — Ray J, the R&B Menace, floats down from the sky!");
                 System.out.println("💫 His aura grows stronger as the chorus approaches...");
-                z = new RayJBoss();
+                z = new SilkDaddy();
 
             } else if (wave == 10) {
-                System.out.println("\n⚠️ FINAL WAVE! The Diddler emerges from the shadows! ⚠️");
-                z = new DiddlerBoss();
-
+                if(!DLCManager.MNEMOSYNE_ENABLED){
+                    System.out.println("\nWAVE 10 LOCKED-DLC REQUIRED");
+                    System.out.print("DLC REQUIRED: PROJECT MNEMOSYNE\n");
+                    System.out.print("TO BE CONTINUED");
+                    return;
+                }
+                z = new SilkEmperor();
             } else if (wave == 8) {
                 System.out.println("\n🔥 Wave 8 – EDP Boss appears!");
                 System.out.println("\"Did you miss me?\"");
-                z = new EDPBoss();
+                z = new CupcakeMonster();
 
             } else if (wave == 7) {
                 System.out.println("\n🎤 Wave 7 – The Golden Crooner sings ominously…");
@@ -469,9 +524,9 @@ case 9 -> Displays.typewriter(
                 z = new Runner();
             }
 
-
-            System.out.println("\nWave " + wave + " - A " + z.getType() + " appears!");
-
+            if(z ==null) {
+                continue;
+            }
             // === Combat loop ===
             // === Combat loop ===
             // === Combat loop ===
