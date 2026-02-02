@@ -501,6 +501,8 @@ case 9 -> Displays.typewriter(
                     System.out.println("\nWAVE 10 LOCKED-DLC REQUIRED");
                     System.out.print("DLC REQUIRED: PROJECT MNEMOSYNE\n");
                     System.out.print("TO BE CONTINUED");
+
+                    DLCStory.playMnemosyneIntro();
                     return;
                 }
                 z = new SilkEmperor();
