@@ -83,5 +83,79 @@ public class DLCStory {
                         "The door ahead unlocks with a heavy metallic click."
         );
     }
+    public static void playScientistReveal() {
+
+        Displays.typewriter(
+                "\nZack steps into a sealed laboratory.\n" +
+                        "Unlike the rest of the facility, this room is untouched.\n" +
+                        "Clean. Quiet. Alive.\n\n" +
+
+                        "A man stands behind reinforced glass.\n" +
+                        "He looks exhausted… but relieved.\n\n" +
+
+                        "Dr. Havel:\n" +
+                        "\"You made it.\"\n\n" +
+
+                        "Zack starts to point the gun at the scientist\n\n"+
+                        "Zack:\n" +
+                        "\"You better start talking.\"\n\n" +
+
+
+                        "Dr. Havel:\n\n"+
+                         "It started at the concert, Zack."+
+
+                        "Zack:\n\n"+
+                        "What concert?"+
+
+                        "Dr. Havel:\n\n"+
+                        "The day everything changed.\n\n"+
+
+                        "A controlled exposure.\n"+
+                        "A test we never meant to lose control of.\n"+
+
+                        "Most people got sick.\n"+
+                        "Some died.\n\n"+
+
+                        "But you...\n"+
+                        "You didn’t.\n"+
+
+                        "Your body adapted.\n"+
+
+                        "You were immune.\n"+
+
+
+                    "Zack grips his weapon tighter.\n\n" +
+
+                        "Dr. Havel:\n" +
+                        "\"We took you.\"\n" +
+                        "\"We studied you.\"\n" +
+                        "\"We copied you.\"\n\n" +
+
+                        "Monitors flicker on.\n" +
+                        "Medical logs scroll past — all bearing Zack’s face.\n\n" +
+
+                        "Dr. Havel:\n" +
+                        "\"Project Mnemosyne was created to erase what we did.\"\n" +
+                        "\"We wiped your memory.\"\n" +
+                        "\"Sent you back to your life.\"\n\n" +
+
+                        "\"You went back to work… like nothing ever happened.\"\n\n" +
+
+                        "A long silence fills the room.\n\n" +
+
+                        "Zack:\n" +
+                        "\"How many?\"\n\n" +
+
+                        "Dr. Havel:\n" +
+                        "\"Five.\"\n\n" +
+                        "\"Three died.\"\n" +
+                        "\"One survived… but broke.\"\n\n" +
+
+                        "The lights flicker.\n\n" +
+
+                        "Dr. Havel (quietly):\n" +
+                        "\"Subject 017 was never terminated.\"\n"
+        );
+    }
 
 }
