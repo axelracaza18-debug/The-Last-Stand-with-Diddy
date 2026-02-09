@@ -157,5 +157,69 @@ public class DLCStory {
                         "\"Subject 017 was never terminated.\"\n"
         );
     }
+    public static void playVaccineRevealAnd017Ambush() {
+        Displays.typewriter(
+                "\nZack follows Dr. Havel into the safest part of the lab.\n" +
+                        "The walls are pristine, untouched by the chaos outside.\n" +
+                        "Monitors flicker softly, showing data and medical scans.\n\n" +
+                        "As they walk... through the hallway in the lab\n\n"+
+                        "Rows of containers line the walls, some holding failed experiments, others under observation.\n\n" +
+                        "Zack (curious):\n" +
+                        "\"Doctor… what’s this container? Why is it broken? What actually happened here?\"\n\n" +
+
+                        "Dr. Havel sighs and motions for Zack to continue walking to the far end of the lab.\n" +
+                        "\"You shouldn’t touch it… but I can explain.\"\n\n" +
+                        "At the end of the lab, surrounded by safer and reinforced containers, Dr. Havel begins to explain:\n\n" +
+
+
+                        "Dr. Havel:\n" +
+                        "\"That broken container… is Subject 017. He was one of our experiments — one of the clones made from your DNA.\"\n" +
+                        "\"The experiment failed… but somehow, he survived in this unstable form.\"\n" +
+                        "\"And this…\" he gestures to a separate, intact vial, glowing faintly, \"…is the key to the vaccine.\"\n" +
+                        "\"We need a sample from a surviving subject to synthesize it and cure the infected.\"\n\n" +
+
+
+
+
+                        "Dr. Havel:\n" +
+                        "\"Zack, we don’t have much time. The spores are spreading.\"\n" +
+                        "\"We’ve developed a vaccine that can neutralize the infection...\"\n" +
+                        "\"But it requires one live sample.\"\n\n" +
+
+                        "Zack (thinking aloud):\n" +
+                        "\"So… that’s why all of this chaos started? The concert… the experiments…\"\n" +
+                        "Dr. Havel nods solemnly, continuing:\n" +
+                        "\"Yes. You are immune, Zack. That’s why you survived. But the others… they need this cure.\"\n\n" +
+                        "Zack grips his weapon tighter.\n" +
+                        "\"Then we make it right.\"\n\n" +
+                        "Dr. Havel:\n" +
+                        "\"Exactly. But we need to act quickly… there’s something dangerous still alive in this lab…\"\n"
+
+        );
+    }
+    public static void play017Ambush() {
+        Displays.typewriter(
+                "\nSuddenly, a loud crash echoes through the lab!\n" +
+                        "Zack and Dr. Havel spin around, weapons ready.\n\n" +
+
+                        "Zack:\n" +
+                        "\"What the hell was that?!\"\n\n" +
+
+                        "Dr. Havel:\n" +
+                        "\"It’s… it’s Subject 017! He’s broken… but alive!\"\n\n" +
+
+                        "A shadow darts across the reinforced containers, moving with unnatural jerks.\n" +
+                        "The broken clone lunges at them, eyes glowing, snarling with a mix of rage and confusion.\n\n" +
+
+                        "Zack:\n" +
+                        "\"I… I have to stop him!\"\n\n" +
+
+                        "Dr. Havel:\n" +
+                        "\"Be careful! He’s unstable… but strong. Protect the vaccine vial at all costs!\"\n\n" +
+
+                        "💥 Subject 017 attacks! The lab erupts into chaos. Vials shatter, alarms blare, and Zack braces himself for the fight of his life.\n" +
+                        "\n--- Prepare for combat ---\n"
+        );
+    }
 
 }
