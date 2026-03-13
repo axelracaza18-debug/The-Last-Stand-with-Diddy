@@ -221,5 +221,166 @@ public class DLCStory {
                         "\n--- Prepare for combat ---\n"
         );
     }
+    public static void playFailedExperimentChambers() {
 
+        Displays.typewriter(
+                "\nThe lab slowly grows quiet after the battle.\n" +
+                        "Subject 017's body lies motionless on the cold floor.\n\n" +
+
+                        "Zack lowers his weapon, breathing heavily.\n\n" +
+
+                        "Zack:\n" +
+                        "\"That thing... was one of your experiments.\"\n\n" +
+
+                        "[Radio crackles]\n\n" +
+
+                        "Dr. Havel:\n" +
+                        "\"Yes... one of many.\"\n\n" +
+
+                        "\"But it wasn't the worst of them.\"\n\n" +
+
+                        "A heavy door slides open ahead of Zack.\n" +
+                        "Green emergency lights flicker inside.\n\n" +
+
+                        "Zack cautiously steps forward.\n\n" +
+
+                        "Rows of containment chambers stretch across the room.\n" +
+                        "Glass tubes filled with dark liquid.\n" +
+                        "Most of them are shattered.\n\n" +
+
+                        "Inside the broken chambers lie twisted bodies.\n\n" +
+
+                        "Zack slowly walks past the labels.\n\n" +
+
+                        "SUBJECT 003 — TERMINATED\n" +
+                        "SUBJECT 006 — TERMINATED\n" +
+                        "SUBJECT 011 — ORGAN FAILURE\n\n" +
+
+                        "Zack stops walking.\n\n" +
+
+                        "At the far end of the room...\n" +
+                        "one containment chamber is still intact.\n\n" +
+
+                        "The door is open.\n\n" +
+
+                        "Empty.\n\n" +
+
+                        "A faint green monitor flickers above the chamber.\n\n" +
+
+                        "SUBJECT 021\n\n" +
+
+                        "Zack stares at the label.\n\n" +
+
+                        "Zack:\n" +
+                        "\"Doctor... what the hell is Subject 021?\"\n\n" +
+
+                        "Silence fills the radio.\n\n" +
+
+                        "Dr. Havel finally responds.\n\n" +
+
+                        "Dr. Havel:\n" +
+                        "\"That... shouldn't be possible.\"\n\n" +
+
+                        "\"That chamber was never supposed to open.\"\n\n" +
+
+                        "Zack looks inside the empty container.\n\n" +
+
+                        "The restraints are broken.\n" +
+                        "But not violently.\n\n" +
+
+                        "Unlocked.\n\n" +
+
+                        "Zack:\n" +
+                        "\"Looks like someone walked out.\"\n\n" +
+
+                        "The lights above the chamber flicker violently.\n\n" +
+
+                        "Dr. Havel whispers through the radio.\n\n" +
+
+                        "\"If Subject 021 escaped...\"\n\n" +
+
+                        "\"Then we may have created something far worse than the infection.\"\n\n" +
+
+                        "The laboratory trembles suddenly.\n\n" +
+
+                        "A deep roar echoes from somewhere below the facility.\n\n" +
+
+                        "Zack slowly raises his weapon again.\n\n" +
+
+                        "Zack:\n" +
+                        "\"Please tell me that's not another experiment.\"\n\n" +
+
+                        "Dr. Havel's voice shakes.\n\n" +
+
+                        "\"No...\"\n\n" +
+
+                        "\"That's the Silk Emperor.\"\n"
+        );
+    }
+    public static void playSilkEmperorReveal() {
+
+        Displays.typewriter(
+                "\nThe laboratory trembles violently.\n" +
+                        "Metal doors slam shut around Zack as alarms scream through the facility.\n\n" +
+
+                        "Zack grips his weapon tighter.\n\n" +
+
+                        "Zack:\n" +
+                        "\"Doctor… what the hell is happening now?!\"\n\n" +
+
+                        "[Radio crackles]\n\n" +
+
+                        "Dr. Havel:\n" +
+                        "\"Zack... you need to listen carefully.\"\n\n" +
+
+                        "\"There was one final experiment.\"\n" +
+                        "\"The one that started everything.\"\n\n" +
+
+                        "The floor beneath Zack begins to crack.\n" +
+                        "Black spores leak from the broken tiles.\n\n" +
+
+                        "Dr. Havel continues, his voice shaking.\n\n" +
+
+                        "\"We called it the Silk Emperor.\"\n\n" +
+
+                        "\"It wasn't meant to be a weapon.\"\n" +
+                        "\"It was supposed to control the infection...\"\n\n" +
+
+                        "\"Instead... it became the source.\"\n\n" +
+
+                        "A massive impact shakes the chamber.\n\n" +
+
+                        "The wall explodes outward.\n\n" +
+
+                        "A gigantic creature crawls from the darkness.\n" +
+                        "Its body is covered in black, web-like tendrils.\n" +
+                        "Dozens of glowing eyes open across its body.\n\n" +
+
+                        "The air fills with thick spores.\n\n" +
+
+                        "Zack steps backward.\n\n" +
+
+                        "Zack:\n" +
+                        "\"That thing caused the outbreak?!\"\n\n" +
+
+                        "Dr. Havel:\n" +
+                        "\"Yes.\"\n\n" +
+
+                        "\"Every infected creature...\"\n" +
+                        "\"Every mutation you've fought...\"\n" +
+                        "\"They all came from it.\"\n\n" +
+
+                        "The Silk Emperor lets out a horrifying roar.\n\n" +
+
+                        "The entire chamber shakes as it moves toward Zack.\n\n" +
+
+                        "Zack raises his weapon.\n\n" +
+
+                        "Zack:\n" +
+                        "\"Then let's finish this.\"\n\n" +
+
+                        "💥 FINAL BOSS: SILK EMPEROR\n\n" +
+                        "Prepare for battle."
+        );
+    }
 }
