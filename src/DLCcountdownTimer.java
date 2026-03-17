@@ -1,8 +1,6 @@
 public class DLCcountdownTimer {
-    public class CountdownTimer {
 
-        public static void startCountdown(int seconds) {
-
+    public static void startCountdown(int seconds) {
             for (int i = seconds; i > 0; i--) {
                 System.out.println("⏳ Vaccine progress: " + i + "s remaining");
 
@@ -15,5 +13,5 @@ public class DLCcountdownTimer {
 
             System.out.println("✅ Vaccine complete!");
         }
-    }
+
 }
