@@ -383,4 +383,157 @@ public class DLCStory {
                         "Prepare for battle."
         );
     }
+    public static void playHeroEnding() {
+
+        Displays.typewriter(
+                "\nZack injects the Silk Emperor and pulls back.\n" +
+                        "The creature collapses momentarily.\n\n" +
+
+                        "Zack quickly extracts a glowing sample.\n\n" +
+
+                        "Zack:\n" +
+                        "\"Got it!\"\n\n" +
+
+                        "He sprints back through the collapsing lab.\n\n" +
+
+                        "[Radio crackles]\n\n" +
+
+                        "Dr. Havel:\n" +
+                        "\"Bring it to me! I can synthesize the vaccine!\"\n\n" +
+
+                        "Zack reaches the lab.\n" +
+                        "Hands over the sample.\n\n" +
+
+                        "Dr. Havel begins working rapidly.\n\n" +
+                        "\"I need your blood zack.. since you have the immunity within you..\"\n"+
+                        "Doctor took zack's blood for the process of completing the vaccine\n"+
+                        "\"If i combine from the source of the infection and the source of the immunity, it will create a vaccine\"\n"+
+
+                        "Dr. Havel:\n" +
+                        "\"I need time… hold it off!\"\n\n" +
+
+                        "Suddenly—\n\n" +
+
+                        "💥 A massive roar shakes the facility.\n\n" +
+
+                        "Zack turns.\n\n" +
+
+                        "The Silk Emperor rises again.\n" +
+                        "Larger.\n" +
+                        "More unstable.\n" +
+                        "More horrifying.\n\n" +
+
+                        "Zack:\n" +
+                        "\"You've gotta be kidding me…\"\n\n" +
+
+                        "💀 FINAL PHASE BEGINS\n"
+        );
+    }
+}
+
+
+public static void playFinalEscape() {
+
+    Displays.typewriter(
+            "\nDr. Havel:\n" +
+                    "\"Zack! It's done! The vaccine is ready!\"\n\n" +
+
+                    "The lab begins collapsing.\n" +
+                    "Ceiling falls apart.\n\n" +
+
+                    "Dr. Havel hands Zack the injector.\n\n" +
+
+                    "Zack runs.\n\n" +
+
+                    "Through corridors...\n" +
+                    "Up broken stairs...\n\n" +
+
+                    "He climbs a watch tower leading outside.\n\n" +
+
+                    "Wind howls as he reaches the top.\n\n" +
+
+                    "Suddenly—\n\n" +
+
+                    "💥 The Silk Emperor appears behind him.\n\n" +
+
+                    "Zack breathes heavily.\n\n" +
+
+                    "Zack:\n" +
+                    "\"This might work…\"\n\n" +
+
+                    "He injects the creature.\n\n" +
+
+                    "...but nothing happens.\n\n" +
+
+                    "Zack freezes.\n\n" +
+
+                    "Zack:\n" +
+                    "\"It's not enough…\"\n\n" +
+
+                    "He looks at his hands.\n\n" +
+
+                    "Zack:\n" +
+                    "\"If I'm the cure…\"\n\n" +
+                    "\"Then I have to finish it.\"\n\n" +
+
+                    "Flashbacks flood his mind.\n" +
+                    "- The concert\n" +
+                    "- The outbreak\n" +
+                    "- The chaos\n\n" +
+
+                    "Zack smiles weakly.\n\n" +
+
+                    "Zack:\n" +
+                    "\"What an adventure… huh?\"\n\n" +
+
+                    "He closes his eyes.\n\n" +
+
+                    "Then—\n\n" +
+
+                    "He jumps.\n\n" +
+
+                    "The Silk Emperor devours him.\n\n" +
+
+                    "Silence.\n\n" +
+
+                    "Then the creature begins to glow.\n\n" +
+
+                    "💥 BOOM\n\n" +
+
+                    "Golden spores explode into the sky.\n\n" +
+
+                    "They spread across the world.\n\n" +
+
+                    "The infection disappears.\n\n" +
+
+                    "[Cut]\n\n" +
+
+                    "Dr. Havel watches from the distance.\n\n" +
+
+                    "Dr. Havel:\n" +
+                    "\"You did it… Subject 000.\"\n\n" +
+
+                    "SYSTEM:\n" +
+                    "SUBJECT 000… TERMINATED.\n"
+    );
+}
+
+void main() {
+}
+public static void playPostCredit() {
+
+    Displays.typewriter(
+            "\nThe world is quiet.\n" +
+                    "People begin to recover.\n\n" +
+
+                    "But far away…\n\n" +
+
+                    "A figure walks in the shadows.\n\n" +
+
+                    "A faint voice echoes.\n\n" +
+
+                    "\"This ain’t over yet…\"\n\n" +
+
+                    "The figure disappears into the forest.\n"
+    );
 }
