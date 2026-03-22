@@ -102,7 +102,7 @@ public class DLCStory {
 
 
                         "Dr. Havel:\n\n"+
-                         "It started at the concert, Zack."+
+                        "It started at the concert, Zack."+
 
                         "Zack:\n\n"+
                         "What concert?"+
@@ -124,7 +124,7 @@ public class DLCStory {
                         "You were immune.\n"+
 
 
-                    "Zack grips his weapon tighter.\n\n" +
+                        "Zack grips his weapon tighter.\n\n" +
 
                         "Dr. Havel:\n" +
                         "\"We took you.\"\n" +
@@ -429,111 +429,97 @@ public class DLCStory {
                         "💀 FINAL PHASE BEGINS\n"
         );
     }
+    public static void playFinalEscape() {
+
+        Displays.typewriter(
+                "\nDr. Havel:\n" +
+                        "\"Zack! It's done! The vaccine is ready!\"\n\n" +
+
+                        "The lab begins collapsing.\n" +
+                        "Ceiling falls apart.\n\n" +
+
+                        "Dr. Havel hands Zack the injector.\n\n" +
+
+                        "Zack runs.\n\n" +
+
+                        "Through corridors...\n" +
+                        "Up broken stairs...\n\n" +
+
+                        "He climbs a watch tower leading outside.\n\n" +
+
+                        "Wind howls as he reaches the top.\n\n" +
+
+                        "Suddenly—\n\n" +
+
+                        "💥 The Silk Emperor appears behind him.\n\n" +
+
+                        "Zack breathes heavily.\n\n" +
+
+                        "Zack:\n" +
+                        "\"This might work…\"\n\n" +
+
+                        "He injects the creature.\n\n" +
+
+                        "...but nothing happens.\n\n" +
+
+                        "Zack freezes.\n\n" +
+
+                        "Zack:\n" +
+                        "\"It's not enough…\"\n\n" +
+
+                        "He looks at his hands.\n\n" +
+
+                        "Zack:\n" +
+                        "\"If I'm the cure…\"\n\n" +
+                        "\"Then I have to finish it.\"\n\n" +
+
+                        "Flashbacks flood his mind.\n" +
+                        "- The concert\n" +
+                        "- The outbreak\n" +
+                        "- The chaos\n\n" +
+
+                        "Zack smiles weakly.\n\n" +
+
+                        "Zack:\n" +
+                        "\"What an adventure… huh?\"\n\n" +
+
+                        "He closes his eyes.\n\n" +
+
+                        "Then—\n\n" +
+
+                        "He jumps.\n\n" +
+
+                        "The Silk Emperor devours him.\n\n" +
+
+                        "Silence.\n\n" +
+
+                        "Then the creature begins to glow.\n\n" +
+
+                        "💥 BOOM\n\n" +
+
+                        "Golden spores explode into the sky.\n\n" +
+
+                        "They spread across the world.\n\n" +
+
+                        "The infection disappears.\n\n" +
+
+                        "[Cut]\n\n" +
+
+                        "Dr. Havel watches from the distance.\n\n" +
+
+                        "Dr. Havel:\n" +
+                        "\"You did it… Subject 000.\"\n\n" +
+
+                        "SYSTEM:\n" +
+                        "SUBJECT 000… TERMINATED.\n"
+        );
+    }
+
+
+
+
+
+
 }
 
 
-public static void playFinalEscape() {
-
-    Displays.typewriter(
-            "\nDr. Havel:\n" +
-                    "\"Zack! It's done! The vaccine is ready!\"\n\n" +
-
-                    "The lab begins collapsing.\n" +
-                    "Ceiling falls apart.\n\n" +
-
-                    "Dr. Havel hands Zack the injector.\n\n" +
-
-                    "Zack runs.\n\n" +
-
-                    "Through corridors...\n" +
-                    "Up broken stairs...\n\n" +
-
-                    "He climbs a watch tower leading outside.\n\n" +
-
-                    "Wind howls as he reaches the top.\n\n" +
-
-                    "Suddenly—\n\n" +
-
-                    "💥 The Silk Emperor appears behind him.\n\n" +
-
-                    "Zack breathes heavily.\n\n" +
-
-                    "Zack:\n" +
-                    "\"This might work…\"\n\n" +
-
-                    "He injects the creature.\n\n" +
-
-                    "...but nothing happens.\n\n" +
-
-                    "Zack freezes.\n\n" +
-
-                    "Zack:\n" +
-                    "\"It's not enough…\"\n\n" +
-
-                    "He looks at his hands.\n\n" +
-
-                    "Zack:\n" +
-                    "\"If I'm the cure…\"\n\n" +
-                    "\"Then I have to finish it.\"\n\n" +
-
-                    "Flashbacks flood his mind.\n" +
-                    "- The concert\n" +
-                    "- The outbreak\n" +
-                    "- The chaos\n\n" +
-
-                    "Zack smiles weakly.\n\n" +
-
-                    "Zack:\n" +
-                    "\"What an adventure… huh?\"\n\n" +
-
-                    "He closes his eyes.\n\n" +
-
-                    "Then—\n\n" +
-
-                    "He jumps.\n\n" +
-
-                    "The Silk Emperor devours him.\n\n" +
-
-                    "Silence.\n\n" +
-
-                    "Then the creature begins to glow.\n\n" +
-
-                    "💥 BOOM\n\n" +
-
-                    "Golden spores explode into the sky.\n\n" +
-
-                    "They spread across the world.\n\n" +
-
-                    "The infection disappears.\n\n" +
-
-                    "[Cut]\n\n" +
-
-                    "Dr. Havel watches from the distance.\n\n" +
-
-                    "Dr. Havel:\n" +
-                    "\"You did it… Subject 000.\"\n\n" +
-
-                    "SYSTEM:\n" +
-                    "SUBJECT 000… TERMINATED.\n"
-    );
-}
-
-void main() {
-}
-public static void playPostCredit() {
-
-    Displays.typewriter(
-            "\nThe world is quiet.\n" +
-                    "People begin to recover.\n\n" +
-
-                    "But far away…\n\n" +
-
-                    "A figure walks in the shadows.\n\n" +
-
-                    "A faint voice echoes.\n\n" +
-
-                    "\"This ain’t over yet…\"\n\n" +
-
-                    "The figure disappears into the forest.\n"
-    );
-}
